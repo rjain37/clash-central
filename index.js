@@ -6,8 +6,8 @@ const fs = require("fs");
 const path = require('path');
 const ejs = require('ejs');
 const Chart = require('chart.js');
+require('dotenv').config()
 
-// const { apiKey, baseID } = require("./keys.js");
 const apiKey = process.env.apiKey;
 const baseID = process.env.baseID;
 
