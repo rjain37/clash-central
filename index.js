@@ -7,7 +7,9 @@ const path = require('path');
 const ejs = require('ejs');
 const Chart = require('chart.js');
 
-const { apiKey, baseID } = require("./keys.js");
+// const { apiKey, baseID } = require("./keys.js");
+const apiKey = process.env.apiKey;
+const baseID = process.env.baseID;
 
 const hallsTable = new airtable({tableName: "Halls", apiKey, baseID});
 const competitionsTable = new airtable({tableName: "Competitions", apiKey, baseID});
