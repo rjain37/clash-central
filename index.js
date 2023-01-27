@@ -14,7 +14,7 @@ const baseID = process.env.baseID;
 const hallsTable = new airtable({tableName: "Halls", apiKey, baseID});
 const competitionsTable = new airtable({tableName: "Competitions", apiKey, baseID});
 
-const hallLabels = [1501, 1502, 1503, 1504, 1505, 1506, 1507];
+// const hallLabels = [1501, 1502, 1503, 1504, 1505, 1506, 1507];
 const ordinals = ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh'];
 
 // set the view engine to ejs
